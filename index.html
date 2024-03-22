@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick Caurousel</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Link Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- Link jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Link Slick JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+</head>
+<body>
+    <section>
+
+        <div class="navbar">
+            <span>Benelli</span>
+            <a href="#">NAKED</a>
+            <a href="#">TOURING</a>
+            <a href="#">CLASSIC</a>
+            <a href="#">SCRAMBLER</a>
+        </div>
+    </section>
+
+    <section>
+
+        <div id="slick-carousel">
+            <div>
+                <img src="https://49f44b141764baa2639d-7ed4c224bc1671c64dae8740f0861232.ssl.cf6.rackcdn.com/motorcycles/502c/banner/502c_slider_2.jpg" alt="">
+                <h1 class="h1">520C<br>
+                ULTIMATE URBAN <br> CRUISER</h1>
+                <button class="btn">VIEW MORE</button>
+            </div>
+                     
+                    <div>
+                        <img src="https://49f44b141764baa2639d-7ed4c224bc1671c64dae8740f0861232.ssl.cf6.rackcdn.com/motorcycles/tnt600/banner/tnt600i-1600x800.jpg" alt="">
+                        <h6 class="h2">TNT600I <br>THE LATEST <br> EVOLUTION</h6>
+                    </div>
+                  
+                    <div>
+                        <img src="https://49f44b141764baa2639d-7ed4c224bc1671c64dae8740f0861232.ssl.cf6.rackcdn.com/motorcycles/trk502x/banner/TRK-X_5.jpg" alt="">
+                        <h1 class="h1" style="color: rgb(248, 250, 251);">TRK502X <br>
+                            BOOK NOW</h1>
+                            <button class="btn">VIEW MORE</button>
+                    </div>
+           </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+    $('#slick-carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 200,
+        dots: true,
+       
+    });
+});
+    </script>
+</body>
+</html>
